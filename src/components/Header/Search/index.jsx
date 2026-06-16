@@ -4,7 +4,7 @@ import './style.css'
 
 const Search = () => {
   return (
-    <div className='searchbox relative h-[50px] w-full rounded-[7px] bg-[#e5e5e5]'>
+    <div className='searchbox relative h-11 w-full rounded-[7px] bg-[#e5e5e5]'>
         <input type="text" placeholder='Search for products....' className='h-full w-full rounded-[7px] bg-transparent px-5 pr-12 text-sm focus:outline-none' />
         <Button
           aria-label="Search"
