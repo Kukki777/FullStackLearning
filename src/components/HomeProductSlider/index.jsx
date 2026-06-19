@@ -6,9 +6,10 @@ import { Navigation } from 'swiper/modules';
 import ProductItem from '../ProductItem';
 import Saree from '../../assets/public/home-categories/fashion2.jpg'
 import Blazzer from '../../assets/public/home-categories/fashion1.webp'
-import leatherWatch from '../../assets/public/home-categories/fashion3.jpg'
+import leatherWatch from '../../assets/public/home-categories/Fashion3.jpg'
 import sneakersShoes from '../../assets/public/home-categories/fashion4.webp'
 import shirt from '../../assets/public/home-categories/fashion5.webp'
+import purse from '../../assets/public/home-categories/purse.png'
 
 const products = [
   {
@@ -59,13 +60,29 @@ const products = [
     isNew: true,
     colors: ['#0f172a', '#ffffff', '#7c3aed'],
   },
+  {
+    title: 'Premium Hand Purse',
+    image: [purse, purse],
+    oldPrice: 1199,
+    price: 899,
+    rating: 4.5,
+    discount: 18,
+    isNew: true,
+    colors: ['#c9a27f', '#f3dcc6', '#2f241d'],
+  },
 ]
 
 const HomeProductSlider = () => {
   return (
     <section className="productsSlider py-5">
         <div className='container'>
-             <div className='w-full py-5'>
+             <div className='grid grid-cols-3 gap-2 py-3 sm:hidden'>
+              {products.slice(0, 6).map((product) => (
+                <ProductItem key={product.title} product={product} compact />
+              ))}
+             </div>
+
+             <div className='hidden w-full py-5 sm:block'>
                   <Swiper
                       navigation={true}
                       grabCursor={true}
