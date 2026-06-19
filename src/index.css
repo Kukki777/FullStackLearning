@@ -222,3 +222,10 @@ body{
  .swiper-button-next::after{
   font-size: 18px !important;
 }
+
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+.MuiTab-textColorPrimary.Mui-selected{
+  color:#ff5252 !important;
+}

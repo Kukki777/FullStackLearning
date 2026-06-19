@@ -31,7 +31,7 @@ const HomeCatSlider = () => {
         <Swiper
           navigation={true}
           grabCursor={true}
-          slidesPerView={3}
+          slidesPerView={2}
           spaceBetween={12}
           breakpoints={{
             480: { slidesPerView: 3, spaceBetween: 14 },
